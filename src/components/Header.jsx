@@ -7,7 +7,7 @@ const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(true);
 
   return (
-    <header className="w-[90%] md:w-[90%] md:mx-10 lg:w-[75%] fixed lg:mx-36 mx-5 text-red-800 bg-[#6f8291] my-10 z-50 rounded-md md:rounded-xl font-kenzo">
+    <header className="w-[90%] md:w-[90%] md:mx-10 lg:w-[75%] fixed lg:mx-36 mx-5 text-red-800 bg-[#748796] my-10 z-50 rounded-md md:rounded-xl font-kenzo">
       <nav className="flex flex-row justify-between">
         <div
           className={`md:w-1/4 w-full flex items-center justify-between ${
@@ -31,7 +31,7 @@ const Header = () => {
 
         <div>
           <ul
-            className={`h-screen md:h-10 lg:h-auto md:my-2 md:w-full  w-[90%] md:ml-0 ml-2 text-white lg:gap-10 flex md:flex-row bg-[#6f8291] md:bg-transparent flex-col items-center justify-center gap-6 lg:text-base md:gap-6 md:mx-20 text-sm font-semibold absolute md:static lg:top-[24px]
+            className={`h-screen md:h-10 lg:h-auto md:my-2 md:w-full  w-[90%] md:ml-0 ml-2 text-white lg:gap-10 flex md:flex-row bg-[#748796] md:bg-transparent flex-col items-center justify-center gap-6 lg:text-base md:gap-6 md:mx-20 text-sm font-semibold absolute md:static lg:top-[24px]
        ${
          toggleMenu ? " -left-full" : "left-0"
        } transition-all duration-200 overflow-y-auto md:pb-0 pb-20`}
@@ -52,7 +52,7 @@ const Header = () => {
             ))}
 
             <div className="lg:text-base md:text-xs md:py-4">
-              <button className="bg-black border-2 border-[#b0e451] text-white md:mr-3 rounded-full md:py-2 md:px-4 lg:px-8 lg:py-2">
+              <button className="bg-black border-2 hover:border-opacity-80 border-[#b0e451] text-white md:mr-3 rounded-full md:py-2 md:px-4 lg:px-8 lg:py-2">
                 Login / Register
               </button>
             </div>
