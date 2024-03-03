@@ -105,6 +105,11 @@ const Home = () => {
             ))}
           </div>
         </div>
+
+        {/*PLATFORM FLOW*/}
+        <div>
+          
+        </div>
       </div>
     </>
   );
