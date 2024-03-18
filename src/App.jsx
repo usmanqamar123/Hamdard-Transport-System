@@ -11,8 +11,10 @@ function App() {
         <div className="min-h-screen w-full">
           <Routes>
             <Route path="/" element={<Home />} />
+
           </Routes>
         </div>
+        
       </Router>
     </div>
     </>

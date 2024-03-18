@@ -10,4 +10,6 @@ export {default as Applications} from "./Feature-section/Applicationsico.png";
 export {default as Sheild} from "./Feature-section/Sheildico.png";
 export { default as Eye} from "./Feature-section/Eyeico.png";
 export { default as Dollar} from "./Feature-section/Dollarico.png";
+export { default as AnyUser} from "./Platform/Any user.png";
+export { default as HamdardLogo} from "./Platform/HamdardLogo.png";
 
