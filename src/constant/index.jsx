@@ -7,6 +7,15 @@ import { Applications } from "../assets";
 import { Sheild } from "../assets";
 import { Eye } from "../assets";
 import { Dollar } from "../assets";
+import { GiFlyingTarget } from "react-icons/gi";
+import { RiVerifiedBadgeLine } from "react-icons/ri";
+import { IoIosCheckmarkCircleOutline,IoMdInformationCircleOutline } from "react-icons/io";
+import { PiNumberSevenBold,PiNumberSixBold,PiNumberSquareFiveFill,PiNumberSquareFive } from "react-icons/pi";
+
+// import { RiVerifiedBadgeLine } from "react-icons/ri";
+
+
+
 
 const Navlink = [
     {
@@ -113,10 +122,57 @@ const Featuresection2 =[
     },
 ]
 
+const Platform =[
+    {
+        id:0,
+        icon: <GiFlyingTarget/>,
+        title:"DETECT"
+    },
+      {
+        id:1,
+        icon: <IoIosCheckmarkCircleOutline/>,
+        title:"VERIFY"
+    },
+      {
+        id:2,
+        icon: <IoMdInformationCircleOutline/>,
+        title:"INFORMATION"
+    },
+      {
+        id:3,
+        icon: <RiVerifiedBadgeLine/>,
+        title:"AUTHENTICATE"
+    }
+]
+const Platformnumber =[
+    {
+        id:0,
+        number: 8,
+    },
+     {
+        id:1,
+        number: 1,
+    },
+     {
+        id:2,
+        number: 5,
+    },
+     {
+        id:3,
+        number: 0,
+    }, 
+    {
+        id:4,
+        number: 14,
+    },
+]
+
 
 export {
      Navlink,
      Herosection,
      Featuresection,
      Featuresection2,
+     Platform,
+     Platformnumber,
 }
