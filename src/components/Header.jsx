@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../index.css'
+import "../index.css";
 import { Link } from "react-router-dom";
 import { Navlink } from "../constant/index";
 import { BiMenuAltLeft } from "react-icons/bi";
@@ -8,7 +8,7 @@ const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(true);
 
   return (
-    <header className="absolute w-[100%] md:w-[90%] top-11 lg:-top-2 md:top-9 md:mx-10 lg:w-[75%] bg-transparent lg:mx-36 text-white z-50 rounded-md md:rounded-xl font-kenzo">
+    <header className="absolute w-[100%] md:w-[90%] top-11 lg:top-1 md:top-20 md:mx-10 lg:w-[75%] bg-transparent lg:mx-36 text-white z-50 rounded-md md:rounded-xl font-kenzo">
       <nav className="flex flex-row justify-between">
         <div
           className={`md:w-1/4 w-full flex items-center justify-between ${
@@ -17,7 +17,10 @@ const Header = () => {
               : ""
           } px-3 sm:p-0 z-20`}
         >
-          <div href="/" className=" text-[10px] pl-1 md:text-lg lg:text-3xl font-bold cursor-pointer">
+          <div
+            href="/"
+            className=" text-[10px] pl-1 md:text-lg lg:text-3xl font-bold cursor-pointer"
+          >
             <h2 className="flex items-center">
               <span className="text-primarytwo"> HU</span>
               <span className="">|TRANSPORT </span>
