@@ -1,6 +1,12 @@
 import React from "react";
 import { CenterLogo } from "../assets";
-import { Featuresection, Featuresection2, Herosection, Platform, Platformnumber } from "../constant";
+import {
+  Featuresection,
+  Featuresection2,
+  Herosection,
+  Platform,
+  Platformnumber,
+} from "../constant";
 import { video } from "../assets";
 import { IoDiamondOutline } from "react-icons/io5";
 import { PiShuffleBold } from "react-icons/pi";
@@ -8,13 +14,10 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { AnyUser } from "../assets";
 import { HamdardLogo } from "../assets";
 
-
 const Home = () => {
   return (
     <>
-      <div
-        className="relative w-full lg:h-[110vh] md:h-[130vh] h-screen"
-      >
+      <div className="relative w-full lg:h-[110vh] md:h-[130vh] h-screen">
         {/* HERO SECTION */}
         <video
           autoPlay
@@ -56,14 +59,11 @@ const Home = () => {
               ))}
             </div>
             <div className="border border-t-2 -mt-8 border-white w-full "></div>
-
           </div>
         </div>
 
         {/* Feature Section*/}
-        <div
-          className="w-full md:p-16 gap-4 p-10 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-        >
+        <div className="w-full md:p-16 gap-4 p-10 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {Featuresection.map((item, index) => (
             <div
               key={item.id}
@@ -115,58 +115,109 @@ const Home = () => {
         {/*PLATFORM FLOW*/}
         <div className="w-3/4 md:w-[85%] mx-auto flex-col justify-center items-center my-12 text-white">
           <div className="flex flex-row gap-3 items-start">
-              <IoDiamondOutline size={50} className=" text-primarytwo"/>
-              <h2 className="text-2xl md:text-4xl font-semibold w-1/5 ">PLATFORM FLOW</h2>  
-              </div>
+            <IoDiamondOutline size={50} className=" text-primarytwo" />
+            <h2 className="text-2xl md:text-4xl font-semibold w-1/5 ">
+              PLATFORM FLOW
+            </h2>
+          </div>
 
-              <div className="w-full gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-10">
-                {Platform.map((item)=>(
-                <div 
+          <div className="w-full gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-10">
+            {Platform.map((item) => (
+              <div
                 key={item.id}
                 className="w-full flex justify-center items-center bg-secondary text-white p-3"
-                >
-                  <div className="flex justify-center items-center gap-3 text-lg md:text-base">
+              >
+                <div className="flex justify-center items-center gap-3 text-lg md:text-base">
                   {item.icon}
                   <p>{item.title}</p>
-                  </div>
                 </div>
-               ))}
               </div>
+            ))}
+          </div>
 
-              <div className="hidden md:block border-b-2 border-primarytwo mt-24 -mb-20"></div>
-              <div className="w-full md:w-full flex md:flex-row flex-col justify-start lg:justify-center gap-6 md:gap-24 lg:gap-44 items-center text-white p-5">
-                <div className="flex justify-start items-center flex-col gap-2 ">
-                <img src={AnyUser} alt={AnyUser} className="w-20 md:w-24 bg-secondary p-5" />
-                <p className="text-lg md:text-base">ANY USER</p>
-                </div>
-                <div className="w-full md:w-1/2 flex md:flex-row flex-col gap-6 md:gap-16 items-center">
-                  <div className="w-full flex justify-start items-center border-8 font-semibold hover:text-white border-white hover:border-primarytwo hover:bg-secondary bg-primarytwo text-black p-5 ">
-                     <PiShuffleBold className="w-20 md:w-24 font-semibold " />
+          <div className="hidden md:block border-b-2 border-primarytwo mt-24 -mb-20"></div>
+          <div className="w-full md:w-full flex md:flex-row flex-col justify-start lg:justify-center gap-6 md:gap-24 lg:gap-44 items-center text-white p-5">
+            <div className="flex justify-start items-center flex-col gap-2 ">
+              <img
+                src={AnyUser}
+                alt={AnyUser}
+                className="w-20 md:w-24 bg-secondary p-5"
+              />
+              <p className="text-lg md:text-base">ANY USER</p>
+            </div>
+            <div className="w-full md:w-1/2 flex md:flex-row flex-col gap-6 md:gap-16 items-center">
+              <div className="w-full flex justify-start items-center border-8 font-semibold hover:text-white border-white hover:border-primarytwo hover:bg-secondary bg-primarytwo text-black p-5 ">
+                <PiShuffleBold className="w-20 md:w-24 font-semibold " />
                 <p className="text-xl md:text-xl ">BUS</p>
-                </div>
-                <div className="flex justify-center items-center flex-col gap-2 ">
-                <img src={HamdardLogo} alt={HamdardLogo} className="w-24 md:w-24 text-white bg-secondary p-5" />
-                <p className="text-lg md:text-base text-center">DESTINATION</p>
-                </div>
-                </div>
-                </div>
-
-              <div className="w-full md:w-11/12 gap-2 md:mx-auto my-10 justify-center items-center text-center text-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5">
-                {Platformnumber.map((item)=>(
-                  <div key={item.id} className="w-full flex justify-center items-center px-4 py-10 bg-secondary ">
-                    <p className="text-center font-bold text-4xl md:text-5xl lg:text-6xl">{item.number}</p>
-                  </div>
-                ))}
-
               </div>
-              <div className="flex justify-center text-white items-center cursor-pointer">
-  <span className="flex items-center text-base md:px-10 py-3 p-5 bg-secondary">
-    <MdOutlineRemoveRedEye width={15} className="mr-2" />
-    <p>View Points</p>
-  </span>
-</div>
+              <div className="flex justify-center items-center flex-col gap-2 ">
+                <img
+                  src={HamdardLogo}
+                  alt={HamdardLogo}
+                  className="w-24 md:w-24 text-white bg-secondary p-5"
+                />
+                <p className="text-lg md:text-base text-center">DESTINATION</p>
+              </div>
+            </div>
+          </div>
 
+          <div className="w-full md:w-11/12 gap-2 md:mx-auto my-10 justify-center items-center text-center text-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5">
+            {Platformnumber.map((item) => (
+              <div
+                key={item.id}
+                className="w-full flex justify-center items-center px-4 py-10 bg-secondary "
+              >
+                <p className="text-center font-bold text-4xl md:text-5xl lg:text-6xl">
+                  {item.number}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-center text-white items-center cursor-pointer">
+            <span className="flex items-center text-base md:px-10 py-3 p-5 bg-secondary">
+              <MdOutlineRemoveRedEye width={15} className="mr-2" />
+              <p>View Points</p>
+            </span>
+          </div>
         </div>
+
+        {/* LATEST SECTION */}
+        
+        <div className="w-3/4 mx-auto bg-secondary rounded-xl text-white ">
+          
+          <h2 className="text-xl md:text-4xl w-full md:w-1/2 md:pb-1 font-semibold p-3 md:p-8">LATEST FROM UNIVERSITY</h2>
+          <div className="flex flex-col md:flex-row gap-10 justify-between">
+          <ul className="flex flex-col list-disc md:gap-6 gap-2 md:p-8 text-base md:text-lg px-6">
+            <li>EVENTS</li>
+            <li>NEWS</li>
+            <li>TESTIMONIALS</li>
+            <li>REVIEWS</li>
+          </ul>
+
+          <div className="p-10 bg-primary w-full md:w-3/5">
+            <div className="flex gap-5">
+            <p className="text-primarytwo text-xs">MAY 16TH 24</p> <p className="text-xs">02:30 Pm</p>
+            </div>
+            <h3 className="text-xl my-5">Top 10 transport system</h3>
+            <p className="text-xs md:text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat rerum eveniet deleniti laborum repellendus dolores culpa maxime aperiam consectetur laboriosam corrupti repellat asperiores impedit officia veritatis obcaecati, sapiente placeat tempore.</p>
+          </div>
+
+          </div>
+
+          <div className="flex justify-end items-end gap-1 pt-1">
+          <div className="w-full lg:w-[29.5%] bg-primary py-5 px-2 md:p-5 md:py-10 shadow-2xl shadow-secondary hover:bg-primarytwo hover:!text-black hover:border-white hover:border-4 transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-x-3">
+    <p className="text-xs">MAY 16TH 24</p>
+    <p className="my-5 text-sm md:text-base">Journey to the modern University</p>
+    <p className="text-xs pt-10">LEARN MORE</p>
+</div>
+            <div className="w-full lg:w-[30%] bg-primary px-2 py-5 md:p-5 md:py-10 hover:bg-primarytwo shadow-2xl shadow-secondary hover:!text-black hover:border-white hover:border-4 transition duration-300 ease-in-out transform hover:scale-105 hover:translate-x-3">
+            <p className="text-xs">MAY 16TH 24</p>
+              <p className="my-5 text-sm md:text-base">How to register for the points</p>
+              <p className="text-xs pt-10">LEARN MORE</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </>
   );
