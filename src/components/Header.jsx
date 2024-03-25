@@ -56,7 +56,7 @@ const Header = () => {
             ))}
 
             <div className="flex flex-col md:flex-row justify-center items-center gap-3 lg:text-base md:text-xs py-4">
-              <Link to="/signin">
+              <Link to="/login">
               <button className=" bg-secondary border-2 hover:border-opacity-80 border-primarytwo text-white rounded-2xl py-2 px-3 lg:px-8 lg:py-2">
                 Login 
               </button>
