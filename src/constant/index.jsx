@@ -8,9 +8,10 @@ import { Sheild } from "../assets";
 import { Eye } from "../assets";
 import { Dollar } from "../assets";
 import { GiFlyingTarget } from "react-icons/gi";
-import { RiVerifiedBadgeLine } from "react-icons/ri";
+import { RiVerifiedBadgeLine,RiTwitterXFill } from "react-icons/ri";
+import { AiOutlineGlobal,AiOutlineQuestionCircle, } from "react-icons/ai";
+import { PiFacebookLogoLight } from "react-icons/pi";
 import { IoIosCheckmarkCircleOutline,IoMdInformationCircleOutline } from "react-icons/io";
-import { PiNumberSevenBold,PiNumberSixBold,PiNumberSquareFiveFill,PiNumberSquareFive } from "react-icons/pi";
 
 // import { RiVerifiedBadgeLine } from "react-icons/ri";
 
@@ -167,6 +168,34 @@ const Platformnumber =[
     },
 ]
 
+const Getintouch = [
+    {
+        id:0,
+        icon: RiTwitterXFill,
+        title:"TWITTER",
+        link:"https://www.twitter.com"
+
+    },
+     {
+        id:1,
+        icon:AiOutlineGlobal,
+        title:"HAMDARD.EDU.PK",
+        link:"https://www.hamdard.edu.pk"
+    },
+     {
+        id:2,
+        icon:PiFacebookLogoLight,
+        title:"FACEBOOK",
+        link:"https://www.facebook.com"
+    },
+     {
+        id:3,
+        icon:AiOutlineQuestionCircle,
+        title:"ABOUT THIS WEBSITE",
+        link:"/"
+    }
+]
+
 
 export {
      Navlink,
@@ -175,4 +204,5 @@ export {
      Featuresection2,
      Platform,
      Platformnumber,
+     Getintouch,
 }

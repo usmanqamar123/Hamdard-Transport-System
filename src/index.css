@@ -4,11 +4,14 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body{
   background-color: #353942;
 
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

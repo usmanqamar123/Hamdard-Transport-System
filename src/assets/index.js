@@ -12,4 +12,4 @@ export { default as Eye} from "./Feature-section/Eyeico.png";
 export { default as Dollar} from "./Feature-section/Dollarico.png";
 export { default as AnyUser} from "./Platform/Any user.png";
 export { default as HamdardLogo} from "./Platform/HamdardLogo.png";
-
+export {default as dotted_Background} from "./Get-in-touch/dotted_background.png";
