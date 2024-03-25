@@ -43,7 +43,7 @@ const Header = () => {
             {Navlink.map((item) => (
               <li
                 key={item.id}
-                className="flex justify-center items-center md:py-4"
+                className="flex justify-center items-center md:py-4 md:ml-4"
               >
                 <Link
                   to={item.link}
@@ -55,9 +55,14 @@ const Header = () => {
               </li>
             ))}
 
-            <div className="lg:text-base md:text-xs py-4">
-              <button className="bg-black border-2 hover:border-opacity-80 border-primarytwo text-white md:mr-3 rounded-full py-2 px-4 lg:px-8 lg:py-2">
-                Login / Register
+            <div className="flex flex-col md:flex-row justify-center items-center gap-3 lg:text-base md:text-xs py-4">
+              <Link to="/signin">
+              <button className=" bg-secondary border-2 hover:border-opacity-80 border-primarytwo text-white rounded-2xl py-2 px-3 lg:px-8 lg:py-2">
+                Login 
+              </button>
+              </Link>
+              <button className="bg-secondary border-2 hover:border-opacity-80 border-white rounded-2xl text-white py-2 px-3 lg:px-8 lg:py-2">
+                Register
               </button>
             </div>
           </ul>

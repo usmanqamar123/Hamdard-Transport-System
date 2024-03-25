@@ -6,13 +6,14 @@ import {
   Herosection,
   Platform,
   Platformnumber,
+  Getintouch,
 } from "../constant";
 import { video } from "../assets";
 import { IoDiamondOutline } from "react-icons/io5";
 import { PiShuffleBold } from "react-icons/pi";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
-import { AnyUser } from "../assets";
-import { HamdardLogo } from "../assets";
+import { AnyUser, dotted_Background, HamdardLogo } from "../assets";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -182,42 +183,110 @@ const Home = () => {
         </div>
 
         {/* LATEST SECTION */}
-        
+
         <div className="w-3/4 mx-auto bg-secondary rounded-xl text-white ">
-          
-          <h2 className="text-xl md:text-4xl w-full md:w-1/2 md:pb-1 font-semibold p-3 md:p-8">LATEST FROM UNIVERSITY</h2>
+          <h2 className="text-xl md:text-4xl w-full md:w-1/2 md:pb-1 font-semibold p-3 md:p-8">
+            LATEST FROM UNIVERSITY
+          </h2>
           <div className="flex flex-col md:flex-row gap-10 justify-between">
-          <ul className="flex flex-col list-disc md:gap-6 gap-2 md:p-8 text-base md:text-lg px-6">
-            <li>EVENTS</li>
-            <li>NEWS</li>
-            <li>TESTIMONIALS</li>
-            <li>REVIEWS</li>
-          </ul>
+            <ul className="flex flex-col list-disc md:gap-6 gap-2 md:p-8 text-base md:text-lg px-6">
+              <li>EVENTS</li>
+              <li>NEWS</li>
+              <li>TESTIMONIALS</li>
+              <li>REVIEWS</li>
+            </ul>
 
-          <div className="p-10 bg-primary w-full md:w-3/5">
-            <div className="flex gap-5">
-            <p className="text-primarytwo text-xs">MAY 16TH 24</p> <p className="text-xs">02:30 Pm</p>
+            <div className="p-10 bg-primary w-full md:w-3/5">
+              <div className="flex gap-5">
+                <p className="text-primarytwo text-xs">MAY 16TH 24</p>{" "}
+                <p className="text-xs">02:30 Pm</p>
+              </div>
+              <h3 className="text-xl my-5">Top 10 transport system</h3>
+              <p className="text-xs md:text-sm">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat rerum eveniet deleniti laborum repellendus dolores culpa
+                maxime aperiam consectetur laboriosam corrupti repellat
+                asperiores impedit officia veritatis obcaecati, sapiente placeat
+                tempore.
+              </p>
             </div>
-            <h3 className="text-xl my-5">Top 10 transport system</h3>
-            <p className="text-xs md:text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat rerum eveniet deleniti laborum repellendus dolores culpa maxime aperiam consectetur laboriosam corrupti repellat asperiores impedit officia veritatis obcaecati, sapiente placeat tempore.</p>
-          </div>
-
           </div>
 
           <div className="flex justify-end items-end gap-1 pt-1">
-          <div className="w-full lg:w-[29.5%] bg-primary py-5 px-2 md:p-5 md:py-10 shadow-2xl shadow-secondary hover:bg-primarytwo hover:!text-black hover:border-white hover:border-4 transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-x-3">
-    <p className="text-xs">MAY 16TH 24</p>
-    <p className="my-5 text-sm md:text-base">Journey to the modern University</p>
-    <p className="text-xs pt-10">LEARN MORE</p>
-</div>
+            <div className="w-full lg:w-[29.5%] bg-primary py-5 px-2 md:p-5 md:py-10 shadow-2xl shadow-secondary hover:bg-primarytwo hover:!text-black hover:border-white hover:border-4 transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-x-3">
+              <p className="text-xs">MAY 16TH 24</p>
+              <p className="my-5 text-sm md:text-base">
+                Journey to the modern University
+              </p>
+              <p className="text-xs pt-10">LEARN MORE</p>
+            </div>
             <div className="w-full lg:w-[30%] bg-primary px-2 py-5 md:p-5 md:py-10 hover:bg-primarytwo shadow-2xl shadow-secondary hover:!text-black hover:border-white hover:border-4 transition duration-300 ease-in-out transform hover:scale-105 hover:translate-x-3">
-            <p className="text-xs">MAY 16TH 24</p>
-              <p className="my-5 text-sm md:text-base">How to register for the points</p>
+              <p className="text-xs">MAY 16TH 24</p>
+              <p className="my-5 text-sm md:text-base">
+                How to register for the points
+              </p>
               <p className="text-xs pt-10">LEARN MORE</p>
             </div>
           </div>
         </div>
 
+        {/* GET IN TOUCH SECTION*/}
+
+        <div className="w-full flex flex-col md:flex-col lg:flex-row my-20 ">
+          <div className="w-full md:w-full lg:w-1/2 p-10 md:p-20 justify-center items-center bg-secondary  border-l-2 border-primarytwo text-white">
+            <h2 className="text-3xl md:text-4xl text-center font-semibold tracking-[-0.08em]">
+              REACH MILLIONS!
+            </h2>
+            <p className="my-5 text-xs md:text-base">
+              Only fill the below email of your company and brand want their ad
+              on our university points only business will be reached within 24h.
+            </p>
+
+            <form>
+              <div className="flex justify-center items-center">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  autoComplete="off"
+                  className="bg-primary p-1 md:p-3 border border-secondary text-xs md:text-base outline-none focus:border-primarytwo "
+                />
+                <button
+                  type="submit"
+                  className="p-1 md:p-3 bg-white text-black text-xs md:text-base hover:text-white hover:bg-primarytwo "
+                >
+                  SUBMIT
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div className="w-full sm:w-full lg:w-1/2 bg-primary p-10 md:p-20 text-white relative">
+            <div className="absolute inset-0 z-0">
+              <img
+                src={dotted_Background}
+                alt="Background"
+                className="w-full h-full blur-[4px]"
+              />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-semibold pb-10 tracking-[-0.08em]">
+              GET IN TOUCH
+            </h2>
+            <div className="relative z-10 w-full grid grid-cols-1 md:grid-cols-2 gap-6">
+              {Getintouch.map((item) => (
+                <div key={item.id}>
+                  <Link
+                    to={item.link}
+                    target="_blank"
+                    className="flex items-center gap-2 hover:opacity-80"
+                  >
+                    <item.icon className="text-2xl text-primarytwo" />
+                    <p className="text-base md:text-base">{item.title}</p>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
