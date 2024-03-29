@@ -175,9 +175,9 @@ const Home = () => {
             ))}
           </div>
           <div className="flex justify-center text-white items-center cursor-pointer">
-            <span className="flex items-center text-base md:px-10 py-3 p-5 bg-secondary">
+            <span className="flex items-center text-base md:px-10 py-3 p-5 hover:bg-primarytwo hover:text-black bg-secondary">
               <MdOutlineRemoveRedEye width={15} className="mr-2" />
-              <p>View Points</p>
+              <p className=" ">View Points</p>
             </span>
           </div>
         </div>
@@ -213,15 +213,15 @@ const Home = () => {
           </div>
 
           <div className="flex justify-end items-end gap-1 pt-1">
-            <div className="w-full lg:w-[29.5%] bg-primary py-5 px-2 md:p-5 md:py-10 shadow-2xl shadow-secondary hover:bg-primarytwo hover:!text-black hover:border-white hover:border-4 transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-x-3">
-              <p className="text-xs">MAY 16TH 24</p>
+            <div className="w-full lg:w-[29.5%] bg-primary py-5 px-2 md:p-5 md:py-10 shadow-2xl shadow-secondary hover:bg-primarytwo group text-white hover:text-black hover:border-white hover:border-4 transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-x-3">
+              <p className="text-xs text-primarytwo group-hover:text-black">MAY 16TH 24</p>
               <p className="my-5 text-sm md:text-base">
                 Journey to the modern University
               </p>
               <p className="text-xs pt-10">LEARN MORE</p>
             </div>
-            <div className="w-full lg:w-[30%] bg-primary px-2 py-5 md:p-5 md:py-10 hover:bg-primarytwo shadow-2xl shadow-secondary hover:!text-black hover:border-white hover:border-4 transition duration-300 ease-in-out transform hover:scale-105 hover:translate-x-3">
-              <p className="text-xs">MAY 16TH 24</p>
+            <div className="w-full lg:w-[30%] bg-primary px-2 py-5 md:p-5 md:py-10 hover:bg-primarytwo shadow-2xl shadow-secondary group text-white hover:text-black hover:border-white hover:border-4 transition duration-300 ease-in-out transform hover:scale-105 hover:translate-x-3">
+              <p className="text-xs text-primarytwo group-hover:text-black">MAY 16TH 24</p>
               <p className="my-5 text-sm md:text-base">
                 How to register for the points
               </p>
