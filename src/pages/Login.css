@@ -1,0 +1,190 @@
+/* Login.css */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('E:\FYP\Hamdard-Transport-System\src\fonts\Kenzo Regular.otf') format('opentype');
+    /* You can also specify font-weight, font-style, etc. */
+  }
+  
+  /* Overall Login Container */
+  .login-container {
+    display: flex; /* Flex container to align items */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    background-image: url('https://onedrive.live.com/embed?resid=E76A35786352D215%212246&authkey=%21AIbs1nA3u01i2PA&width=1920&height=1080'); /* Background image URL */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    position: relative; /* Set position to relative */
+}
+  
+  /* Background Image */
+  .background-image {
+    position: absolute; /* Position absolute to cover the entire container */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Cover the entire width */
+    height: 100%; /* Cover the entire height */
+    /* Add background image URL here */
+    background-image: url('https://onedrive.live.com/embed?resid=E76A35786352D215%212246&authkey=%21AIbs1nA3u01i2PA&width=1920&height=1080'); /* Specify the path to the background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+  }
+  
+  /* Input Group */
+  .input-group {
+    display: flex; /* Flex container to stack inputs vertically */
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 20px; /* Adjust the vertical gap between inputs */
+  }
+  
+  /* Login Form Styles */
+.login-form {
+    background-color: rgba(255, 255, 255, .07); /* Semi-transparent white background */
+    backdrop-filter: blur(2px); /* Apply blur effect to background */
+    padding: 30px; /* Padding for the form */
+    border-radius: 8px; /* Border radius */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Box shadow for the form */
+    max-width: 400px; /* Maximum width of the form */
+    width: 100%; /* Set width to 100% */
+    max-height: 80vh; /* Maximum height of the form */
+    margin-top: 60px; /* Move the form downward */
+}
+  
+  /* Login Form Title */
+  .login-form h2 {
+    text-align: center; /* Center align the title */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+    font-size: 24px; /* Reduced font size */
+    color: #ffffff; /* White text color */
+    font-family: 'CustomFont';
+    letter-spacing: 1px;
+}
+  
+  /* Input Styles */
+  .login-form input {
+    margin-bottom: 20px; /* Bottom margin for inputs */
+    padding: 10px; /* Padding for inputs */
+    border: none; /* No border */
+    border-bottom: 1px solid #ffffff; /* Bottom border with white color */
+    background: transparent; /* Transparent background */
+    outline: none; /* Remove outline */
+    font-size: 16px; /* Font size */
+    color: #ffffff; /* White text color */
+}
+  
+/* Placeholder Styles */
+.login-form input[type="text"]::placeholder,
+.login-form input[type="password"]::placeholder {
+    color: #ccc; /* Placeholder text color */
+}
+/* Background Image for Username and Password Inputs */
+  .login-form input[type="text"] {
+    background-image: url('https://onedrive.live.com/embed?resid=E76A35786352D215%212245&authkey=%21ADNWabkHIYTR56A&width=512&height=512'); /* Specify the path to the username input icon */
+    background-size: 20px; /* Set the size of the background image */
+    background-position: 5px center; /* Position the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    padding-left: 35px; /* Adjust padding to accommodate icon */
+    margin-top: 30px;   /* Adjust margin for gap between cms-id and Login text */
+  }
+  
+  .login-form input[type="password"] {
+    background-image: url('https://onedrive.live.com/embed?resid=E76A35786352D215%212244&authkey=%21AFKCDO9Xxs0e5Qw&width=512&height=512'); /* Specify the path to the password input icon */
+    background-size: 20px; /* Set the size of the background image */
+    background-position: 5px center; /* Position the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    padding-left: 35px; /* Adjust padding to accommodate icon */
+    margin-top: 10px; /* Adjust margin for gap between cms-id and password */
+    
+  }
+  
+  /* Submit Button Styles */
+.login-form button {
+    width: 100%; /* Button width */
+    margin-top: 30px; /* Top margin for the button */
+    margin-bottom: 20px; /* Bottom margin for the button */
+    padding: 10px; /* Padding for the button */
+    background-color: #b3e44d; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Border radius */
+    cursor: pointer; /* Pointer cursor */
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+}
+  
+ /* Hover Styles for Submit Button */
+.login-form button:hover {
+    background-color: #3f3f3f; /* Darker background color on hover */
+}
+  /* Remember Me and Forgot Password Group */
+  .remember-forgot-group {
+    display: flex; /* Flex container */
+    align-items: center; /* Center items vertically */
+    margin-top: 30px; /* Top margin */
+  }
+  
+  /* Label Styles for Remember Me Checkbox */
+  .remember-forgot-group label {
+    color: #ffffff; /* Label text color */
+    margin-left: 5px; /* Adjust margin for spacing between checkbox and label */
+  }
+  
+  /* Link Styles for Forgot Password */
+  .remember-forgot-group a {
+    color: #ffffff; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    margin-left: auto; /* Push the "Forgot Password?" link to the right */
+  }
+  
+  /* Style the custom checkbox */
+  .remember-forgot-group input[type="checkbox"] {
+    margin-right: 5px; /* Adjust margin for spacing between checkbox and left edge */
+    align-self: flex-end; /* Align the checkbox with the bottom of the flex container */
+  }
+  
+  /* Social Icons Container */
+.social-icons {
+    display: flex; /* Flex container */
+    justify-content: center; /* Center align icons */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+  /* Social Icon Styles */
+  .social-icons img {
+    width: 30px; /* Icon width */
+    height: 30px; /* Icon height */
+    margin: 0 10px; /* Margin between icons */
+    cursor: pointer; /* Pointer cursor */
+  }
+  
+  /* Hover Styles for Social Icons */
+  .social-icons img:hover {
+    width: 32px; /* Increase width on hover */
+    height: 32px; /* Increase height on hover */
+  }
+  
+  @media (max-width: 600px) {
+    .login-form {
+      padding: 20px; /* Reduce padding for smaller screens */
+      max-height: 90vh; /* Maximum height of the form */
+      height: auto;
+
+    }
+  
+    .login-form h2 {
+      font-size: 20px; /* Reduce font size for smaller screens */
+    }
+  
+    .login-form input {
+      font-size: 14px; /* Reduce font size for smaller screens */
+    }
+  
+    .login-form button {
+      font-size: 14px; /* Reduce font size for smaller screens */
+
+    }
+    .social-icons {
+        margin-bottom: 80px; /* Add margin at the bottom */
+    }
+      /* Social Icon Styles */
+    
+  }
