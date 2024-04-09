@@ -1,11 +1,18 @@
 export { default as logo } from "./logo.png";
+export { default as HU_logo } from "./HU_logo.png";
 export { default as CenterLogo} from "./Hero-section/Center Logo HUT.png";
 export { default as Icon1} from "./Hero-section/Ico1.png";
 export { default as Icon2} from "./Hero-section/Ico2.png";
 export { default as Icon3} from "./Hero-section/Ico3.png";
 export { default as Icon4} from "./Hero-section/Ico4.png";
+export { default as Icon1Hover} from "./Hero-section/Ico1 Hover.png";
+export { default as Icon2Hover} from "./Hero-section/Ico2 Hover.png";
+export { default as Icon3Hover} from "./Hero-section/Ico3 Hover.png";
+export { default as Icon4Hover} from "./Hero-section/Ico4 Hover.png";
+export { default as Arrow} from "./Hero-section/Right arrow.png";
 export { default as video} from "./HUT_BUS.mp4";
 export { default as FeatureTransparent} from "./Feature-section/HUTTransparentHover.png";
+export { default as Right} from "./Feature-section/right.png";
 export {default as Applications} from "./Feature-section/Applicationsico.png";
 export {default as Sheild} from "./Feature-section/Sheildico.png";
 export { default as Eye} from "./Feature-section/Eyeico.png";
