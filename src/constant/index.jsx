@@ -1,4 +1,4 @@
-import { Icon1 } from "../assets";
+import { Icon1, Icon1Hover, Icon2Hover, Icon3Hover, Icon4Hover,Arrow } from "../assets";
 import { Icon2 } from "../assets";
 import { Icon3 } from "../assets";
 import { Icon4 } from "../assets";
@@ -47,23 +47,31 @@ const Herosection = [
     {
         id:0,
         icon:Icon1,
+        hoverIcon:Icon1Hover,
+        arrow: Arrow,
         title:"Registration Process",
         process:"01"
     }, 
      {
         id:1,
         icon:Icon2,
+        hoverIcon:Icon2Hover,
+        arrow: Arrow,
         title:"Schedules and buses routes",
         process:"02"
     }, 
      {
         id:2,
         icon:Icon3,
+        hoverIcon:Icon3Hover,
+        arrow: Arrow,
         title:"News and Updates",
         process:"03"
     },  {
         id:3,
         icon:Icon4,
+        hoverIcon:Icon4Hover,
+        arrow: Arrow,
         title:"Enjoy your ride",
         process:"04"
     },
@@ -73,24 +81,28 @@ const Featuresection =[
     {
         id:0,
         counts:"100",
+        sup:"+",
         title:"We drive points per day",
         iconBottom:FeatureTransparent,
     }, 
     {
         id:1,
         counts:"1.2KM",
+        sup: 2,
         title:"We cross area per day in Karachi",
         iconBottom:FeatureTransparent,
     }, 
     {
         id:2,
         counts:"110",
+        sup: "",
         title:"Professional drivers force behind",
         iconBottom:FeatureTransparent,
     }, 
     {
         id:3,
         counts:"90",
+        sup: "+",
         title:"Pick locations Pick & Drop",
         iconBottom:FeatureTransparent,
     },
@@ -173,7 +185,7 @@ const Getintouch = [
         id:0,
         icon: RiTwitterXFill,
         title:"TWITTER",
-        link:"https://www.twitter.com"
+        link:"https://twitter.com/hamdarduni?lang=en"
 
     },
      {
@@ -186,7 +198,7 @@ const Getintouch = [
         id:2,
         icon:PiFacebookLogoLight,
         title:"FACEBOOK",
-        link:"https://www.facebook.com"
+        link:"https://www.facebook.com/HamdardUniversityPK"
     },
      {
         id:3,
@@ -196,6 +208,37 @@ const Getintouch = [
     }
 ]
 
+const Footer_Links = [
+    {
+        id:1,
+        title:"HOME",
+        link:"/",
+    },
+     {
+        id:2,
+        title:"UNIVERSITY",
+        link:"/www.hamdard.edu.pk",
+
+    },
+     {
+        id:3,
+        title:"ABOUTUS",
+        link:"/",
+
+    }, 
+    {
+        id:4,
+        title:"DEVS",
+        link:"/",
+
+    }, 
+    {
+        id:5,
+        title:"CONTACT US",
+        link:"/contactus",
+
+    }, 
+]
 
 export {
      Navlink,
@@ -205,4 +248,5 @@ export {
      Platform,
      Platformnumber,
      Getintouch,
+     Footer_Links,
 }
