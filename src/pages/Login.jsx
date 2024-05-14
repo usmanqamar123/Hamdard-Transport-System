@@ -1,11 +1,47 @@
 import React, { useState } from 'react';
+// import { useHistory } from 'react-router-dom'; // Import useHistory from react-router-dom
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
+import axios from "axios";
 
 const Login = () => {
   const [showForgotPasswordText, setShowForgotPasswordText] = useState(false);
+  const [cms, setCms] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  // const history = useHistory(); // Initialize useHistory
+  const navigate = useNavigate();
+
 
   const handleForgotPasswordClick = () => {
     setShowForgotPasswordText(true);
+  };
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const userData = { cms, password };
+      if (!cms) {
+        setError("CMS Id is required");
+        return;
+      } else if (!password) {
+        setError("Password is required");
+        return;
+      } else {
+        setError(""); // Clear any previous errors
+        const res = await axios.post('http://localhost:8000/login', userData);
+        console.log(res); // Log the response
+        // Redirect to dashboard upon successful login
+        navigate('/users/dashboard');
+      }
+    } catch (err) {
+      if (err.response && err.response.data && err.response.data.message) {
+        setError(err.response.data.message); // Set the error message from the server response
+      } else {
+        setError("Something went wrong try again later!"); // Set a generic error message
+      }
+    }
   };
 
   return (
@@ -16,12 +52,14 @@ const Login = () => {
       {/* Login Form */}
       <div className="login-form">
         <h2>Login</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           {/* Input Group */}
           <div className="input-group">
-            <input type="text" placeholder="CMS-ID" />
-            <input type="password" placeholder="Password" />
+            <input type="text" placeholder="CMS-ID" value={cms} onChange={e => setCms(e.target.value)} />
+            <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
           </div>
+          {/* Error message */}
+          {error && <div className="error text-red-500">{error}</div>} {/* Display error if exists */}
 
           {/* Remember Me and Forgot Password */}
           <div className="remember-forgot-group">

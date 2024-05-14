@@ -28,7 +28,7 @@ const Navlink = [
     {
         id:1,
         title:"About",
-        link:"/",
+        link:"/#about",
     },
     {
         id:2,
