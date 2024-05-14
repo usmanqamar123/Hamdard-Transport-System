@@ -127,7 +127,7 @@ const Home = () => {
             ))}
           </div>
 
-          <div className="lg:w-[90%] md:w-[84%] w-[81%] flex flex-col justify-center items-center md:px-10 md:py-12 -mt-10 md:-mt-16 mx-auto bg-secondary text-white">
+          <div className="lg:w-[90%] md:w-[84%] w-[81%] flex flex-col justify-center items-center md:px-10 md:py-12 -mt-10 md:-mt-16 mx-auto bg-secondary text-white" id="about">
             <h1 className="w-full lg:w-1/2 md:p-0 p-10  text-center text-2xl md:text-4xl font-semibold ">
               HOW <span className="text-[#fee942]">HUT</span> IS DIFFERENT FROM
               OTHERS
